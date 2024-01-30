@@ -1,21 +1,19 @@
-/* @type {import('next').NextConfig} */
-const webpack = require("webpack");
+/** @type {import('next').NextConfig} */
+const path = require("path");
+// const isProd = process.env.NODE_ENV === "production";
+// const PRODUCTION_BASE_URL = "https://innerxr.com";
 
 const nextConfig = {
-  reactStrictMode: true,
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    config.plugins.push(
-      new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery",
-        "window.jQuery": "jquery",
-      })
-    );
-    return config;
+  // assetPrefix: isProd ? PRODUCTION_BASE_URL : undefined,
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
   },
+  trailingSlash: true,
   images: {
-    domains: ["inner-garden-images.s3.amazonaws.com"],
+    unoptimized: true,
   },
+  basePath: "",
+  distDir: "out",
 };
 
 module.exports = nextConfig;
