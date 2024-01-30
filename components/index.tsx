@@ -1,9 +1,0 @@
-export { default as HeaderWebsite } from "./header/index";
-export { default as FooterWebsite } from "./footer/index";
-export { default as BlogCard } from "./blogcard/index";
-export { default as Userblogcard } from "./Userblogcard/index";
-export { default as Nestblogcard } from "./Nestblogcard/index";
-export { default as BlogCard2 } from "./blogcard2/index";
-export { default as ArtSeriescard } from "./ArtSeriescard/index";
-export { default as UserMenu } from "./user-menu/index";
-export { default as Editor } from "./Editor/index";

@@ -1,0 +1,210 @@
+.heroSection {
+    padding-top: 20px;
+
+    .bannerImg {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .cardBoxCol {
+        margin: 0 auto;
+        margin-top: -165px;
+
+        .tagName2 {
+            text-align: center;
+            color: #fff;
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .cardBox {
+            background: #fff;
+            overflow: hidden;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+            border: 2px solid #fff;
+            margin-bottom: 40px;
+    
+            .cardBoxTitle {
+                background-image: linear-gradient(var(--Main3), var(--Main1));
+                margin: 0px;
+                padding: 15px 20px;
+                color: #fff;
+                text-align: center;
+                font-size: 36px;
+                font-weight: 700;
+            }
+            .imgBox {
+                width: 100%;
+                height: auto;
+            }
+            .cardBoxBody {
+                padding: 30px 30px;
+                text-align: left;
+                font-size: 18px;
+    
+                p {
+                    margin: 0;
+                    font-size: 15px;
+                }
+                h5 {
+                    color: var(--Main1);
+                    font-size: 30px;
+                    font-weight: 800;
+
+                    a {
+                    color: var(--Main1);
+                    }
+                }
+                .actionsList {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+
+                    .author {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        .img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50px;
+                            object-fit: cover;
+                        }
+                        h6 {
+                            margin: 0px;
+                            font-weight: 600;
+                            font-size: 14px;
+                        }
+                    }
+                    .iconList {
+                        display: flex;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+
+                        li {
+                            width: 40px;
+                            height: 40px;
+                            border: 1px solid #C4CAF0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50px;
+                            margin: 0px 5px;
+                        }
+                    }
+                    .tagsBox {
+                        display: flex;
+                        align-items: center;
+
+                        .tagName {
+                            background: #4F81E5;
+                            color: #fff;
+                            font-size: 14px;
+                            padding: 0px 10px;
+                            border-radius: 50px;
+                            display: block;
+                            min-width: 120px;
+                            text-align: center;
+                            height: 40px;
+                            line-height: 40px;
+                            font-weight: normal;
+                        }
+                        .pts {
+                            background-image: linear-gradient(var(--Main3), var(--Main1));
+                            color: #fff;
+                            font-size: 16px;
+                            padding: 0px 10px;
+                            height: 40px;
+                            line-height: 40px;
+                            min-width: 100px;
+                            border-radius: 50px;
+                            border: none;
+                            font-weight: normal;
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            justify-content: center;
+                            margin-left: 10px;
+
+                            b {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.sectionTitle {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin-bottom: 40px;
+
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+        font-weight: 700;
+    }
+}
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width:991px) {
+
+    .heroSection {
+        padding-top: 20px;
+    
+        .cardBoxCol {
+            margin-top: 20px;
+    
+            .cardBox {
+                margin-bottom: 40px;
+        
+                .cardBoxTitle {
+                    font-size: 22px;
+                }
+                .imgBox {
+                    width: 100%;
+                    height: auto;
+                }
+                .cardBoxBody {
+                    padding: 20px 20px;
+                    font-size: 16px;
+                    h5 {
+                        font-size: 20px;
+                    }
+                    .actionsList {
+                        display: block;
+    
+                        .iconList {
+                            margin:10px 0px;
+    
+                            li {
+                                margin: 0px 5px 0px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .sectionTitle {
+    
+        h3 {
+            font-size: 20px;
+        }
+    }
+}

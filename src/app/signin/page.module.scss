@@ -1,0 +1,106 @@
+.journalSection {
+  padding: 40px 0px;
+
+  h4 {
+    font-size: 36px;
+    text-align: center;
+    color: #241945;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .img1 {
+    width: 100%;
+    border-radius: 30px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .formBox {
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    :global(.form-control) {
+      border: none;
+      padding: 0px;
+
+      &:focus {
+        box-shadow: none;
+        border: none;
+      }
+    }
+  }
+  .formBox2 {
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    label {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    :global(.form-control) {
+      border: 1px solid #cecece;
+      padding: 8px 15px;
+      font-size: 14px;
+      margin-bottom: 15px;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .requestBtn {
+    background: #4f81e5 !important;
+    border-color: #4f81e5 !important;
+    color: #fff !important;
+    width: 100%;
+    border-radius: 50px;
+    padding: 12px 10px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .sliderCard {
+    background: #fff;
+    padding: 30px 20px 20px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+
+    p {
+      font-size: 20px;
+      color: #989898;
+      font-weight: normal;
+    }
+    h6 {
+      color: #564a8d;
+      font-weight: 600;
+      margin: 0px;
+    }
+  }
+  .copyright {
+    text-align: center;
+    color: #666666;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
+
+.invalidfeedback {
+  color: red;
+}
+
+/*=======================================================
+    //////////////RESPONSIVE MEDIA QUERY START///////////////
+    =======================================================*/
+
+@media (max-width: 991px) {
+}
