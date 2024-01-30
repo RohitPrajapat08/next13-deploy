@@ -1,0 +1,54 @@
+
+.complete_profile {
+    background: #f2f3f7;
+    padding: 140px 0px 50px 0px;
+
+	.title {
+		margin-bottom: 30px !important;
+		color: #001e00;
+
+		h2 {
+			font-weight: 500;
+			font-size: 35px;
+			font-family: "proxima_nova_altbold";
+		}
+
+	}
+
+	.contentBody {
+		background: #fff;
+		border: 1px solid #eaeaea;
+		min-height: 500px;
+
+		.profileTitle {
+			padding: 25px 25px;
+			margin: 0;
+			border-bottom: 1px solid #eaeaea;
+
+			h5 {
+				font-family: "proxima_nova_altbold";
+				font-size: 23px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin: 0px;
+			}
+		}
+
+		.contentInside {
+			padding: 20px 20px
+
+		}
+	}
+}
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width:991px) {
+
+
+}

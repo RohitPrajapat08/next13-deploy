@@ -1,0 +1,65 @@
+
+
+.profileMenu {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+	.link{
+		text-decoration: none;
+	}
+
+	li {
+		display: inline-block;
+		width: 100%;
+		flex: 0 0 auto;
+	    margin: 0px;
+
+		a {
+			color: #fff;
+			padding: 18px 18px;
+			display: flex;
+			align-items: center;
+			line-height: 18px;
+			font-weight: 600;
+			border-radius: 10px;
+			margin-bottom: 5px;
+			background-color: #164c38;
+
+			&:global(.active) {
+				background-color:var(--Main);
+				color:#fff;
+				border-color:var(--Main);
+			}
+		}
+	}
+	.LogoutButton{
+		color: #fff;
+		padding: 18px 18px;
+		display: flex;
+		align-items: center;
+		line-height: 18px;
+		font-weight: 600;
+		border-radius: 10px;
+		margin-bottom: 5px;
+		background-color: #164c38;
+		cursor: pointer;
+	}
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width:991px) {
+
+
+	.profileMenu {
+		position: relative;
+		top: 0px;
+	}
+
+}

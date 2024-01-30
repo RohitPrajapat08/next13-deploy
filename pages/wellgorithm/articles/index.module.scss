@@ -1,0 +1,532 @@
+.cateList {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    justify-content: center;
+  
+    li {
+      margin: 0;
+  
+      .catBtn {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        background: transparent;
+        border-radius: 50px;
+        margin-right: 10px;
+        justify-content: center;
+        border: transparent;
+        align-items: center;
+  
+        img {
+          filter: invert(200%) sepia(410%) saturate(950%) hue-rotate(140deg)
+            brightness(100%) contrast(210%);
+          height: auto;
+          width: 45px;
+        }
+        &.active {
+          border: 5px solid #a9d53b;
+          background: #fff;
+  
+          img {
+            filter: none;
+          }
+        }
+      }
+    }
+  }
+  
+  .profileSection {
+    background: #086d65;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  
+    .tagsBox {
+      h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+  
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          display: block;
+          margin-bottom: 5px;
+  
+          button {
+            background: #e0ebd4;
+            border: none;
+            padding: 7px 15px;
+            border-radius: 8px;
+            margin-right: 5px;
+            font-weight: 500;
+            font-size: 14px;
+            width: 80%;
+            text-align: left;
+          }
+        }
+      }
+    }
+  
+    .contentBody {
+      color: #fff;
+      text-align: center;
+      padding: 0px 30px;
+  
+      h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+        color: #e9f063;
+      }
+  
+      .searchBox {
+        position: relative;
+        border: 3px solid #e9f063;
+        border-radius: 12px;
+        overflow: hidden;
+  
+        .bgSearch {
+          width: 100%;
+          height: 52px;
+        }
+        :global(.form-control) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 52px;
+          background: transparent;
+          border: none;
+          padding: 0px 20px;
+          color: #fff;
+          font-weight: 600;
+  
+          &::placeholder {
+            color: #fff;
+          }
+          &:-ms-input-placeholder {
+            color: #fff;
+          }
+          &::-ms-input-placeholder {
+            color: #fff;
+          }
+        }
+        .searchBtn {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          border: none;
+          background: transparent;
+          padding: 3px;
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .backgroundShape {
+    position: relative;
+  
+    .shapeBg1 {
+      width: 100%;
+      position: absolute;
+      height: auto;
+      top: -10px;
+      z-index: 1;
+    }
+    .shapeBg2 {
+      width: 100%;
+      height: auto;
+      margin-top: -50px;
+      transform: rotate(1deg);
+    }
+    .sdf {
+      position: absolute;
+      height: auto;
+      width: 100%;
+      left: 0;
+      z-index: 2;
+      bottom: 0px;
+    }
+  }
+  
+  .searchSeaction {
+    background-image: linear-gradient(#e9f063, #fff, #fff);
+    margin-top: -145px;
+    padding: 220px 0px 40px 0px;
+  
+    .tagsBox {
+      h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+  
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          display: inline-block;
+  
+          button {
+            background: #e0ebd4;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 10px;
+            margin-right: 10px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  
+  .searchShape {
+    .searchShapeImg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .filterSection {
+    padding: 50px 0px 180px 0px;
+  
+    h4 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        display: inline-block;
+        position: relative;
+        margin-right: 10px;
+  
+        .searchBg {
+          width: 40px;
+          height: 40px;
+        }
+  
+        button {
+          background: transparent;
+          border: none;
+          padding: 0px;
+          border-radius: 10px;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          font-weight: 800;
+          color: #12806f;
+  
+          &:focus {
+            background: #aace3a;
+          }
+        }
+      }
+  
+      &.viewList {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -20px;
+        margin-top: 30px;
+  
+        li {
+          flex: 0 0 auto;
+          width: 33.33%;
+          margin: 0px;
+          padding: 0px 20px;
+  
+          a {
+            font-weight: 500;
+            color: #222;
+            border-top: 1px solid #c7c7c6;
+            display: block;
+            padding: 10px 0px;
+          }
+        }
+      }
+    }
+    .selectedValue {
+      background: #11a195;
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+      justify-content: center;
+      font-weight: 800;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+  }
+  
+  .filterOnOff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  
+    .labelText {
+      margin: 0px 10px;
+      font-weight: 600;
+    }
+  
+    .onoff {
+      position: relative;
+      display: inline-block;
+      width: 85px;
+      height: 35px;
+  
+      .iconBox {
+        position: absolute;
+        content: "";
+        height: auto;
+        width: 35px;
+        left: 0px;
+        top: 0px;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+  
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+  
+        &:checked + .slider {
+          background-color: #11a195;
+        }
+        &:focus + .slider {
+          box-shadow: 0 0 1px #2196f3;
+        }
+        &:checked + .slider:before {
+          transform: translateX(50px);
+        }
+        &:checked + .slider .iconBox {
+          transform: translateX(50px);
+        }
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #11a195;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 25px;
+  
+        &:before {
+          position: absolute;
+          content: "";
+          height: 40px;
+          width: 40px;
+          left: -1px;
+          bottom: -2px;
+          background-color: #aecd36;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  
+  .blogSection {
+    background: #11a195;
+    margin-top: -145px;
+    padding: 200px 0px 150px 0px;
+  }
+  
+  .blogCard {
+    margin: 30px 0px;
+  
+    .blogCardImg {
+      position: relative;
+  
+      .postImg {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        border: 3px solid #8ebf4f;
+        border-radius: 15px;
+      }
+      .btnTop {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        background: #7dea9a;
+        color: #055555;
+        transform: translate(-50%, -50%);
+        padding: 5px 20px;
+        font-weight: 600;
+        font-size: 14px;
+        border: 3px solid #8ebf4f;
+        border-radius: 12px;
+      }
+    }
+    .blogCardBody {
+      padding-top: 25px;
+  
+      .link {
+        color: #e9f063;
+        text-decoration: none;
+      }
+      h2 {
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        letter-spacing: 0.1px;
+      }
+      .author {
+        display: flex;
+        background: #0d8077;
+        padding: 8px 8px;
+        border-radius: 50px;
+        align-items: center;
+        color: #fcf6e4;
+        width: 95%;
+  
+        svg {
+          font-size: 30px;
+          color: #11a27b;
+          margin-right: 10px;
+        }
+        h6 {
+          margin: 0px;
+          width: 100%;
+          text-align: center;
+          font-size: 16px;
+  
+          span {
+            margin: 0px 15px;
+          }
+        }
+      }
+    }
+  }
+  
+  /*=======================================================
+  //////////////RESPONSIVE MEDIA QUERY START///////////////
+  =======================================================*/
+  
+  @media (max-width: 991px) {
+    .profileSection {
+      background: #086d65;
+      position: relative;
+      z-index: 2;
+      padding-bottom: 70px;
+  
+      .contentBody {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 40px;
+  
+        h2 {
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        h3 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  
+    .backgroundShape {
+      .shapeBg1 {
+        top: -1px;
+      }
+      .shapeBg2 {
+        margin-top: -10px;
+      }
+      .sdf {
+        width: 130px;
+        top: -30px;
+      }
+    }
+    .filterSection {
+      padding: 50px 0px 180px 0px;
+  
+      h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          display: inline-block;
+          position: relative;
+          margin-right: 10px;
+  
+          .searchBg {
+            width: 40px;
+            height: 40px;
+          }
+  
+          button {
+            background: transparent;
+            border: none;
+            padding: 0px;
+            border-radius: 10px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            font-weight: 800;
+            color: #12806f;
+  
+            &:focus {
+              background: #aace3a;
+            }
+          }
+        }
+  
+        &.viewList {
+          display: block;
+          margin: 0px;
+          margin-top: 30px;
+  
+          li {
+            width: 100%;
+            padding: 0px;
+          }
+        }
+      }
+      .selectedValue {
+        background: #11a195;
+        color: #fff;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        justify-content: center;
+        font-weight: 800;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+    }
+  }
+  
