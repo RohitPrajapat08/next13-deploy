@@ -1,0 +1,23 @@
+
+export { default as logo } from "./logo.svg";
+export { default as banner1 } from "./banner1.jpg";
+export { default as banner2 } from "./banner2.jpg";
+export { default as banner3 } from "./banner3.jpg";
+export { default as icon1 } from "./icon1.svg";
+export { default as icon2 } from "./icon2.svg";
+export { default as icon3 } from "./icon3.svg";
+export { default as icon5 } from "./icon5.svg";
+export { default as icon6 } from "./icon6.svg";
+export { default as icon7 } from "./icon7.svg";
+export { default as profile } from "./profile.png";
+export { default as profile2 } from "./profile2.png";
+export { default as banner4 } from "./banner4.jpg";
+export { default as banner5 } from "./banner5.jpg";
+export { default as banner6 } from "./banner6.png";
+export { default as banner7 } from "./banner7.jpg";
+export { default as explore } from "./explore.svg";
+export { default as plus } from "./plus.svg";
+export { default as img1 } from "./img1.png";
+export { default as img2 } from "./img2.png";
+export { default as upload } from "./upload.svg";
+export { default as img3 } from "./img3.svg";

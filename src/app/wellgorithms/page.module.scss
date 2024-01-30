@@ -1,0 +1,223 @@
+.heroSection {
+    padding-top: 20px;
+
+    .bannerImg {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .helpIcon {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        padding: 5px;
+        font-size: 42px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .cardBoxCol {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        .iconImg {
+            height: 160px;
+            width: auto;
+        }
+        .menuList {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+
+            li {
+
+                :global(.btn) {
+                    background-color: #564A8D;
+                    color: #C4CAF0;
+                    border-radius: 50px;
+                    padding: 7px 20px;
+                    margin: 0px 10px;
+                    font-weight: 600;
+                    text-transform: lowercase;
+                }
+            }
+        }
+    }
+}
+
+.wellgorithmSection {
+    padding-top: 40px;
+
+    .cardBoxCol {
+        margin: 0 auto;
+
+        .cardBox {
+            background: #fff;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+            border: 2px solid var(--Main1);
+            margin-bottom: 50px;
+    
+            .imgBox {
+                width: 100%;
+                height: auto;
+                border-radius: 17px 17px 0px 0px;
+            }
+            .cardBoxBody {
+                padding:45px 30px 30px 30px;
+                text-align: center;
+                font-size: 18px;
+                position: relative;
+
+                .tag {
+                    background: var(--Main2);
+                    color: #fff;
+                    border: 2px solid #fff;
+                    display: inline-flex;
+                    padding: 10px 20px;
+                    border-radius: 40px;
+                    position: absolute;
+                    top: 0px;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                }
+    
+                p {
+                    margin: 0;
+                    font-size: 15px;
+                }
+                h5 {
+                    color: var(--Main1);
+                    font-size: 30px;
+                    font-weight: 800;
+                }
+            }
+            .cardBoxBottom {
+                position: relative;
+
+                .imgBox {
+                    width: 100%;
+                    border-radius: 0px 0px 17px 17px;
+                }
+                .cardBoxBottomBody {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+
+                    h5 {
+                        color: #fff;
+                        text-align: center;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        margin: 0;
+                        display: flex;
+                        gap: 5px;
+                        margin-top: -12px;
+                    }
+                    .explore {
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translate(-0%, -50%);
+                        background: transparent;
+                        border: none;
+                        padding: 0;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 600;
+
+                        .icon {
+                            height: 20px;
+                        }
+                    }
+                }
+                .iconImg {
+                    position: absolute;
+                    left: 50%;
+                    bottom: -25px;
+                    transform: translate(-50%, 0%);
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width:991px) {
+
+    .heroSection {
+        padding-top: 20px;
+
+        .bannerImg {
+            height: 200px;
+            object-fit: cover;
+        }
+    
+        .cardBoxCol {
+            text-align: center;
+            width: 100%;
+    
+            .iconImg {
+                height:50px;
+            }
+            .menuList {
+                flex-wrap: wrap;
+    
+                li {
+                    float: left;
+                    margin-top: 10px;
+    
+                }
+            }
+        }
+    }
+
+    
+.wellgorithmSection {
+    padding-top: 40px;
+
+    .cardBoxCol {
+
+        .cardBox {
+
+            .cardBoxBody {
+                padding:45px 30px 30px 30px;
+                text-align: center;
+                font-size: 18px;
+                position: relative;
+
+    
+                h5 {
+                    font-size: 20px;
+                }
+            }
+            .cardBoxBottom {
+                position: relative;
+
+                .imgBox {
+                    height: 100px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+    
+}
